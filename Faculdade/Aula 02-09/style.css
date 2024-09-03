@@ -22,139 +22,89 @@ button:hover {
     color: #000;
 }
 
+.botao {
+    padding: 10px 30px;
+    font-size: 30px;
+    background-color: #D4D5D9;
+}
+
 .vezes:hover, .divisao:hover,.menos:hover,.mais:hover,.igual:hover {
     background-color: #e98514;
 }
 .result {
-    width: 65vh;
-    height: 50px;
-    background-color: #202020;
+    width: 100%;
+    height: 70px;
+    background-color: #000000;
     color: #fff;
     grid-area: result1;
 }
-.result p {
-    font-size: 25px;
-    padding: 10px;
-    color:#fff;
-}
 
 .clear {
-    padding: 10px 50px;
     background-color: #CACBCD;
-    font-size: 30px;
     grid-area: clear1;
 }
 .mn {
-    padding: 10px 50px;
     background-color: #CACBCD;
-    font-size: 30px;
     grid-area: mn1;
 }
 .porcentagem {
-    padding: 10px 50px;
     background-color: #CACBCD;
-    font-size: 30px;
     grid-area: porcentagem1;
 }
 .divisao {
-    padding: 10px 50px;
     background-color: #F98D11;
-    font-size: 30px;
     grid-area: divisao1;
 }
 
-
-
 .sete {
-    padding: 10px 50px;
-    background-color: #D4D5D9;
-    font-size: 30px;
     grid-area: sete1;
 }
 .oito {
-    padding: 10px 50px;
-    background-color: #D4D5D9;
-    font-size: 30px;
     grid-area: oito1;
 }
 .nove {
-    padding: 10px 50px;
-    background-color: #D4D5D9;
-    font-size: 30px;
     grid-area: nove1;
 }
 .vezes {
-    padding: 10px 50px;
     background-color: #F98D11;
-    font-size: 30px;
     grid-area: vezes1;
 }
 
 .quatro {
-    padding: 10px 50px;
-    background-color: #D4D5D9;
-    font-size: 30px;
     grid-area: quatro1;
 }
 .cinco {
-    padding: 10px 50px;
-    background-color: #D4D5D9;
-    font-size: 30px;
     grid-area: cinco1;
 }
 .seis {
-    padding: 10px 50px;
-    background-color: #D4D5D9;
-    font-size: 30px;
     grid-area: seis1;
 }
 .menos {
-    padding: 10px 50px;
     background-color: #F98D11;
-    font-size: 30px;
     grid-area: menos1;
 }
 
 .um {
-    padding: 10px 50px;
-    background-color: #D4D5D9;
-    font-size: 30px;
     grid-area: um1;
 }
 .dois {
-    padding: 10px 50px;
-    background-color: #D4D5D9;
-    font-size: 30px;
     grid-area: dois1;
 }
 .tres {
-    padding: 10px 50px;
-    background-color: #D4D5D9;
-    font-size: 30px;
     grid-area: tres1;
 }
 .mais {
-    padding: 10px 50px;
     background-color: #F98D11;
-    font-size: 30px;
     grid-area: mais1;
 }
 .zero {
-    padding: 10px 50px;
-    background-color: #D4D5D9;
-    font-size: 30px;
     grid-area: zero1;
 }
 .virgula {
-    padding: 10px 50px;
-    background-color: #D4D5D9;
-    font-size: 30px;
     grid-area: virgula1;
 }
 .igual {
-    padding: 10px 50px;
     background-color: #F98D11;
-    font-size: 30px;
     grid-area: igual1;
 }
 
