@@ -1,0 +1,124 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(46, 44, 44);
+}
+.botao {
+    padding: 15px 30px;
+    font-size: 30px;
+    background-color: #D4D5D9;
+    cursor: pointer;
+    border: 0px;
+    border: 2px solid rgba(0, 0, 0, 0);
+}
+.botao:hover {
+    background-color: #aaabaf;
+}
+#resultado {
+    padding: 18px 20px;
+    float: right;
+    font-size: 30px;
+}
+
+.igual:hover {
+    background-color: #c16e10;
+}
+.result {
+    width: 100%;
+    height: 70px;
+    background-color: #000000;
+    color: #fff;
+    grid-area: result1;
+}
+
+.clear:hover, .porcentagem:hover, .divisao:hover, .vezes:hover, .menos:hover, .mais:hover {
+    background-color: #5c5c61;
+}
+
+.clear {
+    background-color: #77777d;
+    grid-area: clear1; 
+    color: rgb(210, 19, 19);
+}
+.porcentagem {
+    background-color: #77777d;
+    grid-area: porcentagem1;
+}
+.divisao {
+    grid-area: divisao1;
+    background-color: #77777d;
+}
+.vezes {
+    grid-area: vezes1;
+    background-color: #77777d;
+}
+.menos {
+    background-color: #77777d;
+    grid-area: menos1;
+}
+.mais {
+    grid-area: mais1;
+    background-color: #77777d;
+}
+.virgula {
+    grid-area: virgula1;
+}
+.igual {
+    background-color: #F98D11;
+    grid-area: igual1;
+}
+
+.sete {
+    grid-area: sete1;
+}
+.oito {
+    grid-area: oito1;
+}
+.nove {
+    grid-area: nove1;
+}
+
+.quatro {
+    grid-area: quatro1;
+}
+.cinco {
+    grid-area: cinco1;
+}
+.seis {
+    grid-area: seis1;
+}
+
+.um {
+    grid-area: um1;
+}
+.dois {
+    grid-area: dois1;
+}
+.tres {
+    grid-area: tres1;
+}
+.zero {
+    grid-area: zero1;
+}
+
+.teclas {
+    display: grid;
+    grid-template:  "result1 result1 result1 result1"
+                    "clear1 porcentagem1 divisao1 vezes1"
+                    "sete1 oito1 nove1 menos1"
+                    "quatro1 cinco1 seis1 mais1"
+                    "um1 dois1 tres1 igual1"
+                    "zero1 zero1 virgula1 igual1";
+    gap: 2px;
+    border-radius: 20px;
+    overflow: hidden;
+}
