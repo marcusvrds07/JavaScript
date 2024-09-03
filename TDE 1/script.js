@@ -120,3 +120,5 @@
 //     alert(dataFinal);
 
 // }
+
+//Exercicio 6
