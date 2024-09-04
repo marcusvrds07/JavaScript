@@ -1,7 +1,7 @@
 // Exercicio 1
 
-// function vetor() {
-//     var idade = prompt("Digite sua idade: ");
+// function start() {
+//     let idade = prompt("Digite sua idade: ");
 
 //     if(idade >= 18 && idade <= 70) {
 //         document.write("Você é obrigado a votar")
@@ -14,12 +14,12 @@
 
 //Exercicio 2
 
-// function vetor() {
-//     var valid = 0;
+// function start() {
+//     let valid = 0;
 //     while (valid == 0) {
-//     var num1 = parseFloat(prompt("Digite o primeiro número"));
-//     var num2 = parseFloat(prompt("Digite o segundo número"));
-//     var operador = prompt("Escolha entre: divisão, multiplicação, soma e subtração");
+//     let num1 = parseFloat(prompt("Digite o primeiro número"));
+//     let num2 = parseFloat(prompt("Digite o segundo número"));
+//     let operador = prompt("Escolha entre: divisão, multiplicação, soma e subtração");
 
 //     switch (operador) {
 //         case "soma":
@@ -52,8 +52,8 @@
 
 // Exercicio 3
 
-// function vetor() {
-//     var salario = parseFloat(prompt("Digite o seu salário: "));
+// function start() {
+//     let salario = parseFloat(prompt("Digite o seu salário: "));
 
 
 //     if(salario <= 280) {
@@ -74,11 +74,11 @@
 
 // Exercicio 4
 
-// function vetor() {
-//     var salario = parseFloat(prompt("Digite o seu salário: "));
-//     var salarioInicial = salario;
-//     var reajuste;
-//     var percentual;
+// function start() {
+//     let salario = parseFloat(prompt("Digite o seu salário: "));
+//     let salarioInicial = salario;
+//     let reajuste;
+//     let percentual;
 
 //     if(salario <= 280) {
 //         salario = salario * 1.2;
@@ -104,21 +104,114 @@
 
 //Exercicio 5
 
-// function vetor() {
-//     var meses = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"];
-//     var data = prompt("Digite um mês no seguinte formato: 00/00/0000")
+// function start() {
+//     let meses = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"];
+//     let data = prompt("Digite um mês no seguinte formato: 00/00/0000")
 
 //     data = data.split("/")
 //     data[1] = Number(data[1]);
 
-//     var dia = Number(data[0])
-//     var mes = meses[data[1] - 1]
-//     var ano = Number(data[2]);
+//     let dia = Number(data[0])
+//     let mes = meses[data[1] - 1]
+//     let ano = Number(data[2]);
 
-//     var dataFinal = dia + " de " + mes + " de " + ano
+//     let dataFinal = dia + " de " + mes + " de " + ano
 
 //     alert(dataFinal);
-
 // }
 
 //Exercicio 6
+
+// function start() {
+//         let idade = prompt("Digite quantos anos, meses e dia de vida você tem: (anos meses dias)");
+//         idade = dias(idade);
+//         console.log(idade);
+
+//     function dias(idadeCompleta) {
+//         let idades = idadeCompleta.split(" ");
+
+//         let ano = Number(idades[0] * 365);
+//         let mes = Number(idades[1] * 30);
+//         let dias = Number(idades[2]);
+        
+//         return ano + mes + dias;
+//         }
+//     }
+
+//Exercicio 7 
+// function start() {
+// let frase = prompt("Digite sua frase: ");
+// frase = fraseTrocada(frase);
+// console.log(frase);
+
+// function fraseTrocada(fraseTrocada) {
+//     fraseTrocada = fraseTrocada.toLowerCase();
+//     let troca = fraseTrocada.replaceAll("a", "U").replaceAll("o", "G");
+
+//     let palavra = "";
+
+//     for(let i = 0; i < troca.length; i++) {
+//         if(troca[i] == "u") {
+//             palavra += "U"
+//         }
+//         else if (troca[i] == "g") {
+//             palavra += "G"
+//         }
+//         else {
+//             palavra += troca[i];
+//         }
+//     }
+
+//     return palavra;
+//     }
+// }
+
+
+//Exercicio 8
+
+
+// function start() {
+// let limite = prompt("Digite um limite:");
+// tabuada(limite);
+
+// function tabuada(limite) {
+//     for(let i = 1; (i * 7) <= limite; i++) {
+//         console.log(i + " x 7 = " + i * 7);
+//         }
+//     }
+// }
+
+//Exercicio 9
+
+// function start() {
+//     let nomes = new Array(5);
+
+//     for(let i = 0; i < nomes.length; i++) {
+//         nomes[i] = prompt("Digite seu nome");
+//     }
+
+//     let nome = maiorString(nomes);
+
+//     function maiorString(string) {
+//         let maior = "";
+
+//         for(let i = 0; i < string.length; i++) {
+//             if(string[i].length > maior.length || i == 0) {
+//                maior = string[i];
+//             }
+//         }
+//         return maior;
+//     }
+//     console.log(nome);
+// }
+
+//Exercicio 10
+
+// let texto = prompt("Digite sua frase");
+// texto = qtdPalavras(texto);
+// console.log(`Essa frase tem ${texto} palavras.`);
+
+// function qtdPalavras(frase) {
+//     frase = frase.split(" ");
+//     return frase.length;
+// }
