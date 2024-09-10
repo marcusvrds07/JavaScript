@@ -284,11 +284,138 @@
 
 //Exercicio 14
 
-let numeros = new Array(3);
+// function mediaN(n) {
+//     let soma = 0;
+//     for(let i = 0; i < n.length; i++) {
+//         soma += n[i];
+//     }
 
-for(let i = 0; i < 3; i++) {
-    let resposta = prompt(`Digite o ${i + 1}* número: `);
-    numeros.push(resposta);
-}
+//     let media = soma / n.length
+//     return media;
+// }
 
-console.log(numeros);
+// let numeros = new Array(3);
+
+// for(let i = 0; i < 3; i++) {
+//     numeros[i] = Number(prompt(`Digite o ${i + 1}º número: `));
+// }
+
+// numeros = mediaN(numeros);
+// console.log(numeros)
+
+//Exercicio 15
+
+// function receber(numeros, numero) {
+//     let novosNumeros = [];
+//     numeros.forEach(function(n) {
+//         if(n > numero) {
+//             novosNumeros.push(n);
+//         }
+//     });
+//     return novosNumeros;
+// }
+
+// let numeros = new Array(4);
+
+// for(let i = 0; i < numeros.length; i++) {
+//     numeros[i] = Number(prompt(`Digite o ${i + 1}º número: `));
+// }
+
+// let numero = Number(prompt("Digite o 5º número"));
+
+// let resposta = receber(numeros, numero);
+// console.log(resposta);
+
+//Exercicio 16
+
+// function juntar(nomes, nomes2) {
+//     let vetor = [];
+
+//     for(let i = 0; i < 3; i++) {
+//         vetor.push(nomes[i]);
+
+//     }
+//     for(let i = 0; i < 3; i++) {
+//         vetor.push(nomes2[i]);   
+//     }
+//     return vetor;
+// }
+
+// let nomes = new Array(3);
+// let nomes2 = new Array(3);
+
+// for(let i = 0; i < nomes.length; i++) {
+//     nomes[i] = prompt(`Digite o ${i + 1}º nome:`);
+// }
+// for(let i = 0; i < nomes2.length; i++) {
+//     nomes2[i] = prompt(`Digite o ${i + 4}º nome:`);
+// }
+
+// let resultado = juntar(nomes, nomes2);
+
+// console.log(resultado)
+
+//Exercicio 17
+
+// let fraseOriginal = "As pessoas costumam dizer que a motivação não dura sempre. Bem, nem o efeito do banho, por isso recomenda-se diariamente."
+
+// let inicio = fraseOriginal.indexOf("motivação");
+// let final = fraseOriginal.indexOf(". ");
+
+// let fraseRetirada = fraseOriginal.substring(inicio, final).trim();
+
+// console.log(fraseRetirada + "...")
+
+
+//Exercicio 18
+
+    // function conversor(valor) {
+    //     let dinheiro = valor.replace(".", ",");
+    //     return `R$${dinheiro}`
+
+    // }
+
+    // let valorOriginal = parseFloat(prompt("Digite um preço.")).toFixed(2);
+    // valorOriginal = conversor(valorOriginal);
+    // console.log(valorOriginal);
+
+//Exercicio 19
+
+// const min = 1;
+// const max = 3;
+
+// function escolhaAleatoria(min, max) {
+//     let escolhaMaquina = Math.floor(Math.random() * (max - min + 1)) + min;
+//     switch(escolhaMaquina) {
+//         case 1:
+//             return "pedra";
+//         case 2:
+//             return "papel";
+//         case 3:
+//             return "tesoura";
+//     }
+// }
+// function jogar(escolha) {
+//     let escolhaJogador = escolha.toUpperCase();
+//     let escolhaDaMaquina = escolhaAleatoria(min, max).toUpperCase();
+    
+//     if(escolhaJogador == escolhaDaMaquina) {
+//         return `EMPATE! Você escolheu ${escolhaJogador} e a maquina escolheu ${escolhaDaMaquina}`
+//     }
+//     else if((escolhaJogador === "Pedra" && escolhaDaMaquina === "Tesoura") ||
+//     (escolhaJogador === "Papel" && escolhaDaMaquina === "Pedra") ||
+//     (escolhaJogador === "Tesoura" && escolhaDaMaquina === "Papel")) {
+//         return `GANHOU! Você escolheu ${escolhaJogador} e a maquina escolheu ${escolhaDaMaquina}`
+//     }
+//     else {
+//         return `PERDEU! Você escolheu ${escolhaJogador} e a maquina escolheu ${escolhaDaMaquina}`
+//     }
+// }
+
+// let escolha = prompt("Escolha entre (Pedra, Papel ou Tesouro):");
+
+// const resultado = jogar(escolha);
+// console.log(resultado);
+
+// Exercicio 20
+
