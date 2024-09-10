@@ -215,3 +215,80 @@
 //     frase = frase.split(" ");
 //     return frase.length;
 // }
+
+//Exercicio 11
+
+// function start() {
+//     function invertido(nome) {
+//         let nomeInvertido = "";
+        
+//         for(let i = (nome.length - 1); i >= 0; i--) {
+//             nomeInvertido += nome[i];
+//         }
+//         return nomeInvertido.toUpperCase();
+//     }
+//     let nome = prompt("Digite o seu nome: ");
+//     nome = invertido(nome);
+//     console.log(nome)
+
+// }
+
+//Exercicio 12
+
+// function start() {
+//     function mes(mes) {
+//         const meses = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"];
+//         return meses[mes];
+//     }
+//     function diaDaSemana(diaSemana) {
+//         const diasDaSemana = ["Domingo", "Segunda-feira", "Terça-feira", "Quarta-feira", "Quinta-feira", "Sexta-feira", "Sábado"];
+//         return diasDaSemana[diaSemana];
+//     }
+
+//     const dataAtual = new Date();
+
+//     let dia = dataAtual.getDate();
+//     let mesAtual = dataAtual.getMonth();
+//     let ano = dataAtual.getFullYear();
+//     let diaSemana = dataAtual.getDay();
+
+
+//     mesAtual = mes(mesAtual);
+//     diaSemana = diaDaSemana(diaSemana);
+
+//     const dataFormatada = `Dia da semana: ${diaSemana}\nDia do mês: ${dia}\nmês: ${mesAtual}\nAno: ${ano}`
+//     const dataEscrita = `\n\n${dia} de ${mesAtual} de ${ano} às ${dataAtual.getHours()}:${dataAtual.getMinutes()}`
+
+//     const dataFinal = dataFormatada + dataEscrita
+
+
+//     console.log(dataFinal);
+// }
+
+//Exercicio 13
+
+// const n1 = 10,
+//       n2 = 20,
+//       n3 = 30;
+
+// function somar(n1, n2, n3) {
+//     return n1 + n2 + n3;
+// }
+
+// function media(n1, n2, n3) {
+//     const total = somar(n1, n2, n3);
+//     return total / 3;
+// }
+
+// console.log("Soma: "+ somar(n1,n2,n3) + " Media: "+ media(n1,n2,n3))
+
+//Exercicio 14
+
+let numeros = new Array(3);
+
+for(let i = 0; i < 3; i++) {
+    let resposta = prompt(`Digite o ${i + 1}* número: `);
+    numeros.push(resposta);
+}
+
+console.log(numeros);
