@@ -419,3 +419,24 @@
 
 // Exercicio 20
 
+function  tipo(tamLados) {
+    if((tamLados[0] === tamLados[1]) && (tamLados[0] === tamLados[2])) {
+        return "Equilátero";
+    }
+    else if ((tamLados[0] !== tamLados[1]) && (tamLados[0] !== tamLados[2]) && (tamLados[1] !== tamLados[2])) {
+        return "Escaleno";
+    }
+    else {
+        return "Isósceles";
+    }
+}
+
+const lados = [];
+
+    for(let i = 0; i < 3; i++) {
+        const lado = Number(prompt(`Digite o valor do ${i + 1}º do triângulo: `));
+        lados.push(lado);
+    }
+
+    console.log("Lados do triângulo:", lados);
+    console.log("O triângulo é:", tipo(lados));
