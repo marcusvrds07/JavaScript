@@ -36,27 +36,50 @@
 // console.log(resposta)
 
 
-function Carro(modelo, ano, velocidade) {
-    this.modelo = modelo;
-    this.ano = ano;
-    this.velocidade = velocidade;
-    this.acelerar = function () {
-        this.velocidade += 10;
-    };
-    this.frear = function () {
-        if(this.velocidade >= 10) {
-            this.velocidade -= 10;
-        }
-    };
+// function Carro(modelo, ano, velocidade) {
+//     this.modelo = modelo;
+//     this.ano = ano;
+//     this.velocidade = velocidade;
+//     this.acelerar = function () {
+//         this.velocidade += 10;
+//     };
+//     this.frear = function () {
+//         if(this.velocidade >= 10) {
+//             this.velocidade -= 10;
+//         }
+//     };
+// }
+
+// const modelo = "Fusca"
+// const ano = 2000;
+// const vAtual = 150;
+
+// const carro = new Carro(modelo, ano, vAtual);
+// console.log(carro);
+
+// carro.acelerar();
+// carro.acelerar();
+// carro.frear();
+
+
+//DATE
+
+// var d1 = new Date()
+
+// var dataAtual = d1.getHours() + "-" + d1.getMinutes() + "-" + d1.getSeconds();
+
+// console.log(dataAtual);
+
+var data = prompt("Digite uma data seguindo esse formato ano-mes-dia");
+data = new Date(data).getTime();
+
+if(data > new Date().getTime()) {
+    console.log("A data informada é depois da data de hoje")
+}
+else {
+    console.log("A data informada é antes da atual.")
 }
 
-const modelo = "Fusca"
-const ano = 2000;
-const vAtual = 150;
+console.log(data + " " + new Date().getTime());
 
-const carro = new Carro(modelo, ano, vAtual);
-console.log(carro);
-
-carro.acelerar();
-carro.acelerar();
-carro.frear();
+//https://currentmillis.com/
