@@ -419,24 +419,173 @@
 
 // Exercicio 20
 
-function  tipo(tamLados) {
-    if((tamLados[0] === tamLados[1]) && (tamLados[0] === tamLados[2])) {
-        return "Equilátero";
-    }
-    else if ((tamLados[0] !== tamLados[1]) && (tamLados[0] !== tamLados[2]) && (tamLados[1] !== tamLados[2])) {
-        return "Escaleno";
-    }
-    else {
-        return "Isósceles";
-    }
-}
+// function  tipo(tamLados) {
+//     if((tamLados[0] === tamLados[1]) && (tamLados[0] === tamLados[2])) {
+//         return "Equilátero";
+//     }
+//     else if ((tamLados[0] !== tamLados[1]) && (tamLados[0] !== tamLados[2]) && (tamLados[1] !== tamLados[2])) {
+//         return "Escaleno";
+//     }
+//     else {
+//         return "Isósceles";
+//     }
+// }
 
-const lados = [];
+// const lados = [];
 
-    for(let i = 0; i < 3; i++) {
-        const lado = Number(prompt(`Digite o valor do ${i + 1}º do triângulo: `));
-        lados.push(lado);
-    }
+//     for(let i = 0; i < 3; i++) {
+//         const lado = Number(prompt(`Digite o valor do ${i + 1}º do triângulo: `));
+//         lados.push(lado);
+//     }
 
-    console.log("Lados do triângulo:", lados);
-    console.log("O triângulo é:", tipo(lados));
+//     console.log("Lados do triângulo:", lados);
+//     console.log("O triângulo é:", tipo(lados));
+
+    //Exercicio 21
+
+    // function contar(pessoas) {
+    //     let qtdMasculino = 0;
+    //     let qtdAlturas = 0;
+    //     let maiorAltura;
+    //     let sexoSalvo;
+
+    //     for(let i = 0; i < pessoas.sexo.length; i++) {
+
+    //         if(pessoas.sexo[i].toLowerCase() === "masculino") {
+    //             qtdMasculino++;
+    //         }
+    //         if(pessoas.altura[i] > 1.70) {
+    //             qtdAlturas++;
+    //         }
+    //         if(pessoas.altura[i] > maiorAltura || i == 0) {
+    //             maiorAltura = pessoas.altura[i];
+    //             sexoSalvo = pessoas.sexo[i];
+    //         }
+    //     }
+    //     console.log(`O número de homens é ${qtdMasculino} e a quantidade de pessoas que tem mais de 1.70 é ${qtdAlturas}`);
+    //     console.log(`A maior altura é ${maiorAltura}m e a pessoa que tem a maior altura é do sexo ${sexoSalvo}`);
+
+    // }
+
+    // let pessoas = {
+    //     sexo: [],
+    //     altura: []
+    // }
+
+    // for(let i = 0; i < 5; i++) {
+
+    //     // caso queira criar um novo objeto com array dentro do loop.
+    //     // if (!pessoas.nome) {
+    //     //     pessoas.nome = [];
+    //     // }
+
+    //     // pessoas.nome[i] = prompt("Digite seu nome: ");
+    //     pessoas.sexo[i] = prompt("Digite seu sexo");
+    //     pessoas.altura[i] = parseFloat(prompt("Digite sua altura"));
+    // }
+
+    // contar(pessoas);
+
+    // console.log(pessoas);
+
+// Exercicio 22
+
+// function Pais(paisNome, capital, continente) {
+//     this.nome_pais = paisNome;
+//     this.capital = capital;
+//     this.continente = continente;
+// }
+
+// let paisNome = prompt("Digite o nome do seu país");
+// let capital = prompt("Digite a capital do seu país");
+// let continente = prompt("Digite o continente do seu país");
+
+// let meuPais = new Pais(paisNome, capital, continente);
+
+// console.log(meuPais);
+
+
+//Exercicio 23
+
+// let pessoa = {};
+
+// let nome = prompt("Digite seu nome");
+// let idade = parseInt(prompt("Digite sua idade"));
+// let sexo = prompt("Digite seu sexo");
+// let email = prompt("Digite seu email");
+
+// pessoa.nome = nome;
+// pessoa.idade = idade;
+// pessoa.sexo = sexo;
+// pessoa.email = email;
+
+// console.log(pessoa);
+
+//Exercicio 24
+
+// let fruta = {
+//     cor: "Amarelo",
+//     tamanho: "médio",
+//     pais: "Brasil"
+// }
+
+// let cor = prompt("Digite uma cor para fruta");
+// let tamanho = prompt("Digite seu sexo");
+// let pais = prompt("Digite o país da fruta");
+
+// fruta.cor = cor;
+// fruta.tamanho = tamanho;
+// fruta.pais = pais;
+
+// console.log(fruta);
+
+// Exercicio 25
+
+// let qtdalunos =parseInt(prompt("Digite a quantidade de alunos que tem na sua escola"));
+// let diretor = prompt("Digite o nome do diretor");
+// let fundacao = parseInt(prompt("Digite o ano de fundação"));
+// let rua = prompt("Digite o nome da rua");
+// let bairro = prompt("Digite o nome do bairro");
+// let cidade = prompt("Digite o nome da cidade"); 
+
+// let escola = {
+//     numAlunos: qtdalunos,
+//     nomeDiretor: diretor,
+//     anoFundação: fundacao,
+//     endereco: {
+//         rua: rua,
+//         bairro: bairro,
+//         cidade: cidade
+//     }
+// }
+
+// console.log(escola)
+
+//Exercicio 26
+
+// let carro = {
+//     modelo: "",
+//     estado: "",
+//     precoBase: "",
+//     ano: "",
+//     calcularPrecoEstimado: function () {
+//         let anoAtual = new Date().getFullYear();
+//         let anos = anoAtual - this.ano;
+//         let valor = this.precoBase - (1000 * anos);
+//         return valor < 0 ? 0 : valor
+//                //condição ? falso : verdadiro
+//     }
+// }
+
+// carro.modelo = prompt("Digite o modelo do carro:");
+// carro.estado = prompt("Digite o estado do carro:");
+// carro.precoBase = parseFloat(prompt("Digite o preço base do carro:"));
+// carro.ano = parseInt(prompt("Digite o ano do carro:"));
+
+// const valorEstimado = carro.calcularPrecoEstimado();
+
+// console.log("Modelo do Carro:", carro.modelo);
+// console.log("Estado do Carro:", carro.estado);
+// console.log("Preço Base do Carro:", carro.precoBase);
+// console.log("Ano do Carro:", carro.ano);
+// console.log("Valor Estimado do Carro:", valorEstimado);
