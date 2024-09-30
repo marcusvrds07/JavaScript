@@ -1,0 +1,21 @@
+/* .card {
+    color: blue;
+} */
+
+.texto {
+    text-align: center;
+    font-weight: bold;
+}
+
+button {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: black;
+    color: #fff;
+    cursor: pointer;
+}
+
+.hidden {
+    display:none;
+}
