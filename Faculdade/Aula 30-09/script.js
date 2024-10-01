@@ -21,13 +21,27 @@
 
 
 
-let pai = document.querySelector(".pai");
-let contador = 0;
+// let pai = document.querySelector(".pai");
+// let contador = 0;
 
 // pai.addEventListener('mousemove', function() {
 //     console.log(contador++);
 // });
 
-pai.addEventListener('mouseover', function() {
-    console.log(contador++);
-});
+// pai.addEventListener('mouseover', function() {
+//     console.log(contador++);
+// });
+
+function verificar(input) {
+    alert(input.value);
+}
+
+function virarVermelho(input) {
+    input.style.border = "2px solid red"
+}
+
+function verificarTexto(input) {
+    if(event.key == "Enter") {
+        alert("Formulario enviado com sucesso");
+    }
+}
